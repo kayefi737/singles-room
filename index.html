@@ -20,6 +20,7 @@
       <p class="intro">
         Share something you are going through, something you have experienced,
         or a question you have about relationships and single life.
+        Submissions may be discussed anonymously during fellowship so we can learn from real experiences.
         We do not ask for your name, email, phone number, or church unit.
       </p>
     </section>
@@ -35,6 +36,7 @@
         <input type="hidden" name="_subject" value="New Single's Room Submission">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://kayefi737.github.io/singles-room/thank-you.html">
         <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
 
         <div class="field">
@@ -102,27 +104,11 @@
           </label>
         </fieldset>
 
-        <fieldset class="field">
-          <legend>Can we discuss this during fellowship?</legend>
-          <label class="choice">
-            <input type="radio" name="Discussion Permission" value="Yes, discuss anonymously" required>
-            <span><strong>Yes</strong><small>You may discuss it anonymously.</small></span>
-          </label>
-          <label class="choice">
-            <input type="radio" name="Discussion Permission" value="Yes, after removing identifying details">
-            <span><strong>Yes, with editing</strong><small>Remove anything that may identify someone first.</small></span>
-          </label>
-          <label class="choice">
-            <input type="radio" name="Discussion Permission" value="No, keep private">
-            <span><strong>No</strong><small>Please keep this private.</small></span>
-          </label>
-        </fieldset>
-
         <label class="consent">
-          <input type="checkbox" required>
+          <input type="checkbox" name="Discussion Consent" value="I agree" required>
           <span>
-            I understand that Single's Room may lightly edit a submission to remove identifying details,
-            without changing the meaning.
+            I understand that my submission may be discussed anonymously during fellowship.
+            Single's Room may lightly edit it to remove identifying details without changing the meaning.
           </span>
         </label>
 

@@ -49,3 +49,9 @@ Also ask members not to include identifying information in the story itself.
 ## Later improvements
 
 If the project grows, the email backend can be replaced with Supabase, Firebase, or a custom FastAPI backend without redesigning the whole front end.
+
+## Version 2
+
+- Added a custom thank-you page after submission.
+- Removed the private-only option.
+- Submitting now requires consent that the story may be discussed anonymously during fellowship.

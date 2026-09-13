@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7d5a50" />
+  <title>Thank You | Single's Room</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thank-you-wrap { min-height: 100vh; display: grid; place-items: center; padding: 28px; }
+    .thank-you-card {
+      width: min(620px, 100%); text-align: center; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 26px; padding: 48px 30px;
+      box-shadow: var(--shadow);
+    }
+    .thank-you-card h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 14px; }
+    .thank-you-card p { color: var(--muted); line-height: 1.7; max-width: 500px; margin: 0 auto 24px; }
+    .home-link {
+      display: inline-block; text-decoration: none; background: var(--primary);
+      color: white; padding: 13px 20px; border-radius: 13px; font-weight: 700;
+    }
+    .home-link:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
+  <main class="thank-you-wrap">
+    <section class="thank-you-card">
+      <div class="badge">Submission received</div>
+      <h1>Thank you.</h1>
+      <p>
+        Your story has been received. If it is used during fellowship, it will be shared without your name
+        or other identifying details.
+      </p>
+      <a class="home-link" href="index.html">Back to Single's Room</a>
+    </section>
+  </main>
+</body>
+</html>
