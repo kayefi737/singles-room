@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7d5a50" />
+  <meta name="description" content="Single's Room — a safe space for real stories, real questions and real conversations." />
+  <title>Single's Room</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="badge">A safe space for honest conversations</div>
+      <h1>Single's Room</h1>
+      <p class="tagline">Real stories. Real questions. Real conversations.</p>
+      <p class="intro">
+        Share something you are going through, something you have experienced,
+        or a question you have about relationships and single life.
+        We do not ask for your name, email, phone number, or church unit.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="privacy-note">
+        <strong>Before you share:</strong>
+        Please do not include names, phone numbers, workplaces, church departments,
+        social handles, or any detail that could identify you or another person.
+      </div>
+
+      <form action="https://formsubmit.co/scottieharvey731@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Single's Room Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+        <div class="field">
+          <label for="category">What is this about?</label>
+          <select id="category" name="Category" required>
+            <option value="" selected disabled>Choose a category</option>
+            <option>Dating</option>
+            <option>Talking Stage</option>
+            <option>Marriage</option>
+            <option>Breakup / Heartbreak</option>
+            <option>Friendship</option>
+            <option>Loneliness</option>
+            <option>Family Pressure</option>
+            <option>Sex & Boundaries</option>
+            <option>Faith & Relationships</option>
+            <option>Communication</option>
+            <option>Money & Relationships</option>
+            <option>Red Flags</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="experience">Tell us what happened</label>
+          <textarea
+            id="experience"
+            name="Experience"
+            rows="8"
+            maxlength="5000"
+            placeholder="Write freely. You do not need to make it sound perfect..."
+            required
+          ></textarea>
+          <div class="counter"><span id="experienceCount">0</span>/5000</div>
+        </div>
+
+        <div class="field">
+          <label for="question">What would you like the community to help you with?</label>
+          <textarea
+            id="question"
+            name="Question"
+            rows="4"
+            maxlength="1500"
+            placeholder="Advice, perspective, encouragement, or just something you want discussed..."
+          ></textarea>
+          <div class="counter"><span id="questionCount">0</span>/1500</div>
+        </div>
+
+        <fieldset class="field">
+          <legend>What would you like from us?</legend>
+          <label class="choice">
+            <input type="radio" name="Support Requested" value="Advice" required>
+            <span><strong>Advice</strong><small>What would you do in my situation?</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Support Requested" value="Discussion">
+            <span><strong>Discussion</strong><small>I want to hear different perspectives.</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Support Requested" value="Encouragement">
+            <span><strong>Encouragement</strong><small>I mainly need support.</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Support Requested" value="Just sharing">
+            <span><strong>Just sharing</strong><small>I just need somewhere to say it.</small></span>
+          </label>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Can we discuss this during fellowship?</legend>
+          <label class="choice">
+            <input type="radio" name="Discussion Permission" value="Yes, discuss anonymously" required>
+            <span><strong>Yes</strong><small>You may discuss it anonymously.</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Discussion Permission" value="Yes, after removing identifying details">
+            <span><strong>Yes, with editing</strong><small>Remove anything that may identify someone first.</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="Discussion Permission" value="No, keep private">
+            <span><strong>No</strong><small>Please keep this private.</small></span>
+          </label>
+        </fieldset>
+
+        <label class="consent">
+          <input type="checkbox" required>
+          <span>
+            I understand that Single's Room may lightly edit a submission to remove identifying details,
+            without changing the meaning.
+          </span>
+        </label>
+
+        <button type="submit" class="submit-button">Send anonymously</button>
+
+        <p class="form-footer">
+          If your situation involves immediate danger, abuse, self-harm, or threats,
+          please speak directly with a trusted leader or qualified professional rather than relying on this form.
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      <strong>Single's Room</strong>
+      <span>Listen first. Understand. Support.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

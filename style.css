@@ -1,0 +1,260 @@
+:root {
+  --bg: #f7f1ec;
+  --surface: #fffdfb;
+  --text: #2c2421;
+  --muted: #746762;
+  --primary: #7d5a50;
+  --primary-dark: #65463e;
+  --accent: #eadfd7;
+  --border: #e5d8d0;
+  --shadow: 0 16px 45px rgba(71, 49, 41, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(234,223,215,.75), transparent 36%),
+    var(--bg);
+  color: var(--text);
+}
+
+.page-shell {
+  width: min(760px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 52px 0 34px;
+}
+
+.hero {
+  text-align: center;
+  padding: 22px 12px 34px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 9vw, 5.2rem);
+  line-height: .95;
+  margin: 22px 0 12px;
+  letter-spacing: -0.045em;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.intro {
+  max-width: 610px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: clamp(22px, 5vw, 42px);
+  box-shadow: var(--shadow);
+}
+
+.privacy-note {
+  background: #f8efe9;
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #5c4a44;
+}
+
+.field {
+  border: 0;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  transition: border .2s, box-shadow .2s;
+}
+
+select {
+  min-height: 52px;
+  padding: 0 14px;
+}
+
+textarea {
+  padding: 15px 16px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(125, 90, 80, 0.10);
+}
+
+textarea::placeholder {
+  color: #a39690;
+}
+
+.counter {
+  margin-top: 7px;
+  text-align: right;
+  color: #a0948e;
+  font-size: .78rem;
+}
+
+.choice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 13px 14px;
+  margin: 10px 0;
+  background: #fff;
+  cursor: pointer;
+  transition: background .2s, border .2s, transform .15s;
+}
+
+.choice:hover {
+  border-color: #cdb8ad;
+  background: #fcf8f5;
+  transform: translateY(-1px);
+}
+
+.choice input {
+  margin-top: 4px;
+  accent-color: var(--primary);
+}
+
+.choice span {
+  display: grid;
+  gap: 3px;
+}
+
+.choice small {
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin: 6px 0 24px;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.consent input {
+  margin-top: 5px;
+  accent-color: var(--primary);
+}
+
+.submit-button {
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  padding: 16px 20px;
+  background: var(--primary);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform .15s, background .2s;
+}
+
+.submit-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.form-footer {
+  margin: 18px 0 0;
+  color: #8d817b;
+  font-size: .82rem;
+  line-height: 1.55;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px 10px;
+  color: var(--muted);
+  font-size: .85rem;
+  display: grid;
+  gap: 5px;
+}
+
+footer strong {
+  color: var(--primary);
+}
+
+.hidden-field {
+  display: none !important;
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    width: min(100% - 18px, 760px);
+    padding-top: 24px;
+  }
+
+  .hero {
+    padding-bottom: 24px;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .intro {
+    font-size: .95rem;
+  }
+}
